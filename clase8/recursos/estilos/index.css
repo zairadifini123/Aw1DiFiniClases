@@ -1,0 +1,12 @@
+/*Regla de estilo, busca algo en el documento html y le va a aplicar las propiedades*/
+
+/*Selectores de tipo*/
+body{
+    background-color: #ecb88d;
+}
+header{
+    background-color: rgb(104, 61, 4);
+}
+footer{
+    background-color: rgb(104, 61, 4);
+}

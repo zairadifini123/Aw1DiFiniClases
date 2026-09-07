@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Sahara Grooming - Sun-baked simplicity for your best friend</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#78706a",
+                        "on-primary-fixed": "#401a08",
+                        "surface-container-high": "#ece6dc",
+                        "error-container": "#fce4e0",
+                        "primary-fixed": "#fbe8d8",
+                        "tertiary-container": "#d47070",
+                        "surface-container-highest": "#e6e0d6",
+                        "surface": "#faf5ee",
+                        "on-tertiary-container": "#3a2020",
+                        "outline": "#9a9088",
+                        "error": "#c0392b",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#f0a878",
+                        "tertiary-fixed-dim": "#e8a0a0",
+                        "inverse-on-surface": "#faf5ee",
+                        "on-background": "#3a302a",
+                        "on-secondary-fixed": "#2a2420",
+                        "surface-container-low": "#f6f0e8",
+                        "on-tertiary-fixed-variant": "#6e3030",
+                        "tertiary-fixed": "#fce0e0",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#eae2da",
+                        "surface-container": "#f2ece4",
+                        "on-surface-variant": "#605850",
+                        "primary-container": "#e08850",
+                        "inverse-surface": "#3a302a",
+                        "surface-tint": "#c2652a",
+                        "outline-variant": "#d8d0c8",
+                        "on-tertiary-fixed": "#2e1515",
+                        "background": "#faf5ee",
+                        "on-primary-fixed-variant": "#8a4518",
+                        "secondary-fixed": "#eae2da",
+                        "on-secondary-fixed-variant": "#504840",
+                        "surface-variant": "#ece6dc",
+                        "surface-dim": "#dcd6cc",
+                        "secondary-fixed-dim": "#cec6be",
+                        "surface-bright": "#faf5ee",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#f0a878",
+                        "on-error-container": "#7a1a10",
+                        "primary": "#c2652a",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#fbe8d8",
+                        "on-secondary-container": "#605850",
+                        "tertiary": "#8c3c3c",
+                        "on-surface": "#3a302a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["EB Garamond", "serif"],
+                        "display": ["EB Garamond", "serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+            font-family: theme('fontFamily.body');
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .soft-shadow {
+            box-shadow: 0 2px 16px rgba(58, 48, 42, 0.04);
+        }
+    </style>
+</head>
+
+<body class="antialiased min-h-screen flex flex-col pt-24">
+    <!-- TopNavBar -->
+    <nav
+        class="bg-surface/80 backdrop-blur-md fixed top-0 w-full z-50 shadow-sm border-b border-surface-container-low/60 transition-all duration-300 ease-in-out">
+        <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+            <a class="font-headline text-2xl font-bold text-primary" href="#">Sahara Grooming</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a class="font-body text-label-md text-on-surface-variant hover:text-primary-container transition-colors duration-300"
+                    href="#services">Services</a>
+                <a class="font-body text-label-md text-on-surface-variant hover:text-primary-container transition-colors duration-300"
+                    href="#pricing">Pricing</a>
+                <a class="font-body text-label-md text-on-surface-variant hover:text-primary-container transition-colors duration-300"
+                    href="#testimonials">Testimonials</a>
+                <a class="font-body text-label-md text-on-surface-variant hover:text-primary-container transition-colors duration-300"
+                    href="#contact">Contact</a>
+            </div>
+            <a class="bg-primary text-on-primary font-body text-label-md font-semibold py-2.5 px-6 rounded-lg hover:bg-primary-container hover:text-on-primary-container transition-colors duration-300"
+                href="#booking">
+                Book Now
+            </a>
+        </div>
+    </nav>
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="max-w-7xl mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-1/2 space-y-8">
+                <h1 class="font-headline text-5xl md:text-7xl text-on-background leading-tight tracking-tight">
+                    Dale a tu mejor amigo el cuidado que merece
+                </h1>
+                <p class="font-body text-lg text-on-surface-variant max-w-lg leading-relaxed">
+                    Experimenta el lujo de un cuidado meticuloso en un ambiente cálido y relajante. Nuestro enfoque
+                    minimalista asegura que cada detalle sea perfecto.
+                </p>
+                <a class="inline-block bg-primary text-on-primary font-body text-label-md font-semibold py-3.5 px-8 rounded-lg hover:bg-primary-container hover:text-on-primary-container transition-colors duration-300 soft-shadow"
+                    href="#booking">
+                    Reserva tu cita
+                </a>
+            </div>
+            <div class="w-full md:w-1/2">
+                <div
+                    class="rounded-xl overflow-hidden soft-shadow relative pt-[100%] md:pt-[120%] bg-surface-container-low">
+                    <img alt="Groomed dog looking at camera" class="absolute inset-0 w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiJngPj8Yc_vI5crMHOF8yNFnE-JhHHZzw-1bNJbcJEO3EmcsCDmizDEYX68n3ijYSQsUMKuNY6WE_RFvJ5fdoT6yF8uvaSG5OQO_9t3daPfXJdbUAAUbfY4UexRBvVA3Hrh2knt6i9X635tU5mIftXuk9HvBPqVkxck8LtZ9L2312iSjpLE8tLRZNyl8GyFNxvDHAjiQy7KkfVHtP3QF3mjKKX9oJlpJqXP8I4ID8o3gP2CmgKjA1" />
+                </div>
+            </div>
+        </section>
+        <!-- Promotional Price -->
+        <section class="bg-surface-container-low py-24" id="pricing">
+            <div class="max-w-4xl mx-auto px-6 text-center space-y-12">
+                <h2 class="font-headline text-4xl text-on-background">Promoción Especial</h2>
+                <div
+                    class="bg-surface rounded-2xl p-12 soft-shadow border border-outline-variant/60 relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 bg-tertiary text-on-tertiary px-6 py-2 rounded-bl-xl font-body text-sm font-semibold uppercase tracking-wider">
+                        Oferta Limitada
+                    </div>
+                    <h3 class="font-headline text-3xl text-primary mb-2">Corte de Pelo Completo</h3>
+                    <p class="font-body text-on-surface-variant mb-8">Un servicio premium para renovar el estilo de tu
+                        mascota, con productos de la más alta calidad.</p>
+                    <div class="flex items-end justify-center gap-2 mb-8">
+                        <span class="font-headline text-2xl text-on-surface-variant line-through">$50</span>
+                        <span class="font-headline text-6xl text-on-background font-bold leading-none">$25</span>
+                    </div>
+                    <a class="inline-block bg-transparent border-2 border-primary text-primary font-body text-label-md font-semibold py-3 px-8 rounded-lg hover:bg-primary hover:text-on-primary transition-colors duration-300"
+                        href="#booking">
+                        Aprovechar Oferta
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Scheduling Form -->
+        <section class="py-24 max-w-3xl mx-auto px-6" id="booking">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="font-headline text-4xl text-on-background">Formulario de Turnos</h2>
+                <p class="font-body text-on-surface-variant">Reserva el espacio de tu mascota en unos simples pasos.</p>
+            </div>
+            <form class="bg-surface p-10 rounded-2xl soft-shadow border border-outline-variant/60 space-y-8">
+                <div class="space-y-6">
+                    <div>
+                        <label class="block font-body text-sm font-semibold text-on-background mb-2" for="name">Nombre
+                            Completo</label>
+                        <input
+                            class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 font-body text-on-background focus:ring-2 focus:ring-primary focus:border-primary transition-shadow"
+                            id="name" name="name" placeholder="Tu nombre" type="text" />
+                    </div>
+                    <div>
+                        <label class="block font-body text-sm font-semibold text-on-background mb-2"
+                            for="dog-breed">Raza del Perro</label>
+                        <input
+                            class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 font-body text-on-background focus:ring-2 focus:ring-primary focus:border-primary transition-shadow"
+                            id="dog-breed" name="dog-breed" placeholder="Ej. Golden Retriever" type="text" />
+                    </div>
+                    <div>
+                        <label class="block font-body text-sm font-semibold text-on-background mb-2" for="date">Fecha
+                            Preferida</label>
+                        <input
+                            class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 font-body text-on-background focus:ring-2 focus:ring-primary focus:border-primary transition-shadow"
+                            id="date" name="date" type="date" />
+                    </div>
+                </div>
+                <button
+                    class="w-full bg-primary text-on-primary font-body text-label-md font-semibold py-4 rounded-lg hover:bg-primary-container hover:text-on-primary-container transition-colors duration-300"
+                    type="submit">
+                    Confirmar Turno
+                </button>
+            </form>
+        </section>
+        <!-- Testimonials -->
+        <section class="bg-surface-container-low py-24" id="testimonials">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="font-headline text-4xl text-on-background">Lo que dicen de nosotros</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-surface p-8 rounded-2xl soft-shadow border border-outline-variant/60 flex flex-col">
+                        <div class="text-primary mb-6">
+                            <span class="material-symbols-outlined text-4xl"
+                                data-icon="format_quote">format_quote</span>
+                        </div>
+                        <p class="font-body text-on-background text-lg flex-grow mb-6">"¡Excelente servicio! Mi perro
+                            nunca había estado tan tranquilo durante un corte. Se nota el amor y la dedicación."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-surface-container-highest overflow-hidden">
+                                <img class="w-full h-full object-cover"
+                                    data-alt="A portrait of a happy female customer smiling in a bright, sunlit room, warm color palette, minimalist lifestyle photography, shallow depth of field, natural lighting."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP342WfnBtvLgmMbcKhN0-wV71X_8cayu6k9r_pVrRUUHzHP5xoWVX7JttnkMaLiGOWxrUbwZ9smzpGOhv48yL3aHH6YfhtLwRXsGGhSo6YrT20DOOjM9_LTU6BqhunUkXa3JUp2j08y6l94USocg7FfNVPB2QXX8ypj2zqCo569eOtVlc61ZSssDz_GT6rJYEB9mxr_pIHZ2J__Ebq_llpEqskOE64hBJd7GXb-dnLGc1CNnvaB2d" />
+                            </div>
+                            <div>
+                                <h4 class="font-body font-semibold text-on-background">María L.</h4>
+                                <span class="font-body text-sm text-on-surface-variant">Dueña de Max</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-surface p-8 rounded-2xl soft-shadow border border-outline-variant/60 flex flex-col">
+                        <div class="text-primary mb-6">
+                            <span class="material-symbols-outlined text-4xl"
+                                data-icon="format_quote">format_quote</span>
+                        </div>
+                        <p class="font-body text-on-background text-lg flex-grow mb-6">"Mi perro quedó precioso. El
+                            ambiente es tan relajante que casi me quedo yo también a descansar. Muy recomendado."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-surface-container-highest overflow-hidden">
+                                <img class="w-full h-full object-cover"
+                                    data-alt="A portrait of a male customer in a casual setting, warm sunlight highlighting his face, minimalist background, editorial style photography, natural look."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzGMZhUzv_gZdlELPS4rIWl_cf2T7T8TOGyGI86iXJnwtcrQaJAGSkVhiw5JztLIhZ_crJJANS8-z32NVFLeKj94-uXMbDv5JjweOR7Wn6g6HeF3dppaLwOUas_q01jIla7WlSbvCUd77jnJZMWVUuXLoFutIpO7Vhh2cyLebUEDyPvuepRwNni6TsI-c3ARoyjg7aMiErZyd6azHixfFOmln4KyBdBYhwRrXgRhEDN-u1TAkGdG__" />
+                            </div>
+                            <div>
+                                <h4 class="font-body font-semibold text-on-background">Carlos P.</h4>
+                                <span class="font-body text-sm text-on-surface-variant">Dueño de Bella</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-surface p-8 rounded-2xl soft-shadow border border-outline-variant/60 flex flex-col">
+                        <div class="text-primary mb-6">
+                            <span class="material-symbols-outlined text-4xl"
+                                data-icon="format_quote">format_quote</span>
+                        </div>
+                        <p class="font-body text-on-background text-lg flex-grow mb-6">"Profesionalismo puro. Los
+                            productos que usan dejaron el pelo de mi mascota brillante y suave por semanas."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-surface-container-highest overflow-hidden">
+                                <img class="w-full h-full object-cover"
+                                    data-alt="A portrait of a mature woman smiling softly, standing outdoors with a subtle warm sunset glow, minimalist aesthetic, clear and sharp focus on the face."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyIZl7-rkdrr2tWpsHmNHsyYVG82MDj9F8cLhn7o09KpW6n4sc98NJ4lNp_-xgS_xR7VAtM-OdM_lRPBClhV92UMZqNTSJvczEgbznBUS9ZhU_fKHVirHPKuVZyKzJr8PH3Dr35GP3AC8TSejsHAweIuFYTkV23d7fMyIfWNJlBFtPqjSSgINAribRafLAhyi3g4bmzDe-7-IVI35-7jZhnrreW94sI_AU0g6CyuqwCE3tnUoGV7lW" />
+                            </div>
+                            <div>
+                                <h4 class="font-body font-semibold text-on-background">Elena G.</h4>
+                                <span class="font-body text-sm text-on-surface-variant">Dueña de Toby</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container-lowest py-12 border-t border-outline-variant/60 w-full">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto space-y-4 md:space-y-0">
+            <div class="font-headline text-xl text-on-surface">
+                Sahara Grooming
+            </div>
+            <div class="font-body text-label-sm uppercase tracking-wider text-on-surface-variant">
+                © 2024 Sahara Grooming. Sun-baked simplicity for your best friend.
+            </div>
+            <div class="flex gap-6">
+                <a class="font-body text-label-sm uppercase tracking-wider text-on-surface-variant opacity-80 hover:opacity-100 transition-opacity hover:underline decoration-primary/40 underline-offset-4"
+                    href="#">Privacy Policy</a>
+                <a class="font-body text-label-sm uppercase tracking-wider text-on-surface-variant opacity-80 hover:opacity-100 transition-opacity hover:underline decoration-primary/40 underline-offset-4"
+                    href="#">Terms of Service</a>
+                <a class="font-body text-label-sm uppercase tracking-wider text-on-surface-variant opacity-80 hover:opacity-100 transition-opacity hover:underline decoration-primary/40 underline-offset-4"
+                    href="#">Instagram</a>
+                <a class="font-body text-label-sm uppercase tracking-wider text-on-surface-variant opacity-80 hover:opacity-100 transition-opacity hover:underline decoration-primary/40 underline-offset-4"
+                    href="#">Support</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
