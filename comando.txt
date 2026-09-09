@@ -1,0 +1,17 @@
+Comandos de consola
+
+Comandos primera vez (en casa)
+
+- Instalar NodeJS
+- Verificar si está instalado: node -v 
+- Verificar instalación de npm: npm -v 
+- Instalar manejador de paquetes pnpm: npm i -g pnpm: https://www.npmjs.com/
+- Verificar instalación de pnpm: pnpm -v: https://pnpm.io/es/
+
+Por proyecto:
+
+- Verificar si no existe el package.json: pn init
+- Instalar paquete five-server: pn add five-server
+- Reinstalar paquetes si existe package.json: pn install
+- pn dev
+- Configurar scripts: "dev":"five-server"

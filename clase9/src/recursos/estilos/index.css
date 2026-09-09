@@ -1,0 +1,72 @@
+/*Regla de estilo, busca algo en el documento html y le va a aplicar las propiedades*/
+
+@font-face{
+    font-family: Poppins;
+    src: url(./fuentes/Poppins-Regular.ttf);
+}
+
+/*SELECTOR UNIVERSAL*/
+
+/* *{
+    outline: 1px red solid;
+} */
+
+/*Selectores de tipo*/
+
+html{
+    font-family:Poppins, Verdana, Verdana, Geneva, Tahoma, sans-serif
+}
+body{
+    background-color: #ecb88d;
+}
+
+header{
+    background-color: #fbff00;
+}
+
+header{
+    background-color: #ff0800;
+}
+
+/*ancla(link)*/
+a{
+    color: #580d0d;
+    text-decoration: none; 
+}
+
+/*Selector de CLASE, se crea un nombre*/
+
+/*.vinculos{
+    color:#ffffff;
+}
+*/
+
+/*ENCABEZADO*/
+.encabezado-principal
+{
+    background-color:#7a1212;
+}
+
+.encabezado-principal .vinculos a{
+    color:#ffffff; 
+}
+
+/*CONTENIDO PRINCIPAL*/
+.contenido-principal{
+
+}
+
+/*PIE PRINCIPAL*/
+.pie-principal{
+
+}
+
+/*ATRIBUTO*/
+/* [HREF]{
+
+} */
+
+/* #contactos{
+
+} */
+
