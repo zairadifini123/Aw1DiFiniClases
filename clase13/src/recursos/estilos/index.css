@@ -1,0 +1,146 @@
+/*Selectores UNIVERSALES*/
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./fuentes/Poppins-Regular.ttf);
+}
+
+/* Reset */
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Selectores de TIPO */
+html {
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: #faebd7;
+    height: 1400px;
+}
+
+header {
+    background-color: rgb(172, 172, 19);
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* Selectores de CLASE */
+.encabezado-principal {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #858282;
+    padding: 5px;
+}
+
+.encabezado-principal a img {
+    width: 50px;
+}
+
+.encabezado-principal nav {
+    display: none;
+}
+
+.contenido-principal {
+    background-color: #faebd7;
+    padding: 10px;
+    height: 1500px;
+}
+
+/* contacto */
+.contenido-principal form input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
+
+.contenido-principal form button {
+    padding: 5px 160px;
+
+}
+
+.contenido-principal .contenedor-form {
+    padding: 20px 20%;
+}
+
+.contenido-principal .contenedor-form form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.contenido-principal .parrafo {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    font-size: 0.9rem;
+    /*r de raiz, va a agarrar el valor que esta en la raiz (html) y lo multiplica*/
+    background-color: #ff8c00;
+    width: 200px;
+}
+
+.pie-principal {
+    background-color: #858282;
+    ;
+}
+
+.pie-principal .mensajeria {
+    list-style: none;
+    /*Borra el punto*/
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.pie-principal ul {
+    color: #f5f5f5
+}
+
+/*Responsividad*/
+@media(width > 500px) {
+    body {
+        background-color: #ff5e00;
+        height: 1400px;
+    }
+
+    .contenido-principal {
+        background-color: #ff5e00;
+        padding: 10px;
+        height: 1500px;
+    }
+}
+
+@media(width > 640px){
+    body {
+        background-color: #0300ce;
+        height: 1400px;
+    }
+
+    .encabezado-principal nav {
+        display: block;
+    }
+    .encabezado-principal .boton-menu{
+        display:none;
+    }
+    .contenido-principal {
+        background-color: #0300ce;
+        padding: 10px;
+        height: 1500px;
+    }
+}
