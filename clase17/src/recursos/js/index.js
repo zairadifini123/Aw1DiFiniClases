@@ -5,6 +5,7 @@
 
 //Buscar querySelector y querySelectorAll
 
+//Objetos creados 
 const productosMascotas = [
     {
         nombre: "Collar Ajustable de Nylon",
@@ -78,42 +79,44 @@ const productosMascotas = [
     }
 ];
     
-const contenedorProductos = document.getElementById("contenedor-productos") //Busca un elemento por id para diferenciarlo del arbol del DOM
-// console.log(contenedorProductos)
-// contenedorProductos.textContent = '<h3> producto 1 </h3>' Solo texto
+//Busca un elemento por id para diferenciarlo del arbol del DOM
+const contenedorProductos = document.getElementById("contenedor-productos") 
+//contenedorProductos.textContent = '<h3> producto 1 </h3>' Solo texto
 //contenedorProductos.innerHTML = '<h3> producto 1 </h3>' Si aplica elemento html 
 
-// contenedorProductos.innerHTML = `
-// <article>
-//     <h3>Correa</h3>
-//     <!-- Se pueden poner varios elementos -->
-//     <picture>
-//         <img src="./recursos/imagenes/productos/correa.jpg" alt="dos perros con correa">
-//     </picture>
-//     <p>Correa azul resistente de metal</p>
-//     <ul>
-//         <li>Talle M</li>
-//         <li>Precio $5000</li>
-//     </ul>
-//     <button>Agregar al carrito</button>
-// </article>
-// `                
+// Función de renderizado: Llama a a la función renderizarProductos y le pasa el contenedor (referencia al elemento HTML donde se van a mostrar los productos) y el arreglo (De los productos que querés representar) 
+function renderizarProductos(contenedorProductos, productosMascotas) {
+    let productosHTML = ""; // Variable vacia para almacenar el HTML generado
 
-let productosHTML = ''
-productosMascotas.forEach((producto)=>{
-    productosHTML += `
-    <article class="producto">
-    <h3>${producto.nombre}</h3>
-    <picture>
-        <img src="${producto.imagen}" alt="${producto.nombre}">
-    </picture>
-    <p>${producto.descripcion}</p>
-    <ul>
-        <li>${producto.talles[0]}</li>
-        <li>${producto.precio}</li>
-    </ul>
-    <button>Agregar al carrito</button>
-</article>
-    `
-})
-contenedorProductos.innerHTML = productosHTML
+    //Recorre cada producto en el arreglo productosMascotas y genera el HTML correspondiente para cada uno, concatenándolo a la variable productosHTML
+    productosMascotas.forEach((producto) => {
+        //Variable que almacena el HTML generado para cada producto, se incrementa para que almacene el proximo producto y no se sobreescriba
+        // Se utiliza la sintaxis de template literals para guardar el valor especifico de cada producto en el HTML generado
+        productosHTML += ` 
+            <article class="producto">
+                <h3>${producto.nombre}</h3> 
+
+                <picture>
+                    <img src="${producto.imagen}" alt="${producto.nombre}">
+                </picture>
+
+                <p>${producto.descripcion}</p>
+
+                <ul>
+                    <li>Talle: ${producto.talles[0]}</li>
+                    <li>Precio: $${producto.precio}</li>
+                </ul>
+
+                <button>Agregar al carrito</button>
+            </article>
+        `;
+    });
+
+    return productosHTML; // Retorna el HTML generado para todos los productos
+}
+
+// Ejecuta la funcion renderizarProductos y asigna el HTML generado al contenedorProductos, mostrando así los productos en la página web
+contenedorProductos.innerHTML = renderizarProductos(
+    contenedorProductos,
+    productosMascotas
+);
