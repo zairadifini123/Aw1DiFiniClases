@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./fuentes/Poppins/Poppins-Regular.ttf);
+}
+
+/* Reset */
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Selectores de TIPO */
+html {
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: #faebd7;
+    min-height: 100vh; /* Ocupa el 100% de la pantalla como mínimo, se estira si hay más contenido */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(172, 172, 19);
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Selectores de CLASE */
+.encabezado-principal {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #858282;
+    padding: 5px;
+}
+
+.encabezado-principal a img {
+    width: 50px;
+}
+
+.encabezado-principal nav {
+    display: none;
+}
+
+.contenido-principal {
+    background-color: #faebd7;
+    padding: 20px;
+    flex: 1; /* Permite que el contenido tome todo el espacio disponible empujando el footer abajo */
+}
+
+/* Formulario y Contacto */
+.contenido-principal form input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
+
+.contenido-principal form button {
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.contenido-principal .contenedor-form {
+    padding: 20px 10%;
+}
+
+.contenido-principal .contenedor-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Pie de página arreglado */
+.pie-principal {
+    background-color: #858282;
+    padding: 20px;
+    color: #f5f5f5;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Garantiza que siempre permanezca al final */
+}
+
+.pie-principal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #f5f5f5;
+}
+
+/* Botón flotante para mensajes (WhatsApp u otros) */
+.pie-principal .mensajeria {
+    list-style: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+/* Responsividad */
+@media (width > 500px) {
+    body,
+    .contenido-principal {
+        background-color: #ff5e00;
+    }
+}
+
+@media (width > 640px) {
+    body,
+    .contenido-principal {
+        background-color: #0300ce;
+    }
+
+    .encabezado-principal nav {
+        display: block;
+    }
+
+    .encabezado-principal .boton-menu {
+        display: none;
+    }
+}
