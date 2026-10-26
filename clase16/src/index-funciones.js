@@ -38,3 +38,10 @@ a(()=>{
     console.log('Se ejecuto el callback b')
 })
 
+const numeros = [2,8,12,50]
+
+//filter: Filtra y hace un nuevo arreglo
+const numerosFiltrados = numeros.filter((numero)=>{
+    return numero > 10
+})
+console.log(numerosFiltrados)
