@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas-Catálogo</title>
+    <link rel="stylesheet" href="./recursos/estilos/index.css">
+    <!-- 1. Atributo defer
+    2. Atributo y valor type="module": Trata a java script como un modulo cerrado (dividir el js en distintos archivos) -->
+    <script type="module" src="./recursos/js/index.js"></script>
+</head>
+<body>
+    <header class="encabezado-principal">
+        <a href="./index.html" aria-label="Ir al inicio">
+            <img src="./recursos/imagenes/huella.png" alt="Logo tienda"> 
+        </a> 
+       <nav class="vinculos">
+            <a href="./index.html">
+                Inicio
+            </a>
+            <a href="./catalogo.html">
+                Catálogo
+            </a>
+            <a href="./contacto.html">
+                Contacto
+            </a>
+            <span id="carro"> 0</span>
+       </nav> 
+    </header>
+
+    <main class="contenido-principal">
+        <h1>Catalogo</h1>
+        <!-- Apartado de la pagina -->
+        <section>
+            <h2>Productos</h2>
+            <button id="evento-boton">Evento</button>
+            <dialog id="dialogo">
+                <h2>Producto</h2>
+                <p>Descripcion</p>
+                <form method="dialog">
+                    <button>Cerrar</button>
+                </form>
+            </dialog>
+            <div id="contenedor-productos">
+             <!-- Aca se cargó por javascript -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pie-principal">
+        <ul>
+            <li>
+                <a href="https://instagram.com/@huellitas" target="_blank">
+                    @huellitas
+                </a>
+            </li>
+            <li>
+                Bv. San Juan 200 - Bº Nueva Córdoba
+            </li>
+            <li class="mensajeria">
+                <a href="https://wa.me?tel=1111111" aria-label="enlace al whatsapp" target="_nueva">
+                    <img src="./recursos/imagenes/mensajes.svg" alt="icono mensajeria">
+                </a>
+            </li>
+        </ul>
+    </footer>
+    
+</body>
+</html>
